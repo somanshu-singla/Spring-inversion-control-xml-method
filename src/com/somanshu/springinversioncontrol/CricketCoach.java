@@ -22,5 +22,10 @@ public class CricketCoach implements Coach {
 		// TODO Auto-generated method stub
 		return "I like playing cricket , so I will decide on my own!";
 	}
+	@Override
+	public String getMsg() {
+		// TODO Auto-generated method stub
+		return happyfortuneservice.getMsg();
+	}
 
 }
