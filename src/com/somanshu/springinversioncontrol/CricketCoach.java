@@ -12,6 +12,11 @@ public class CricketCoach implements Coach {
 	/* (non-Javadoc)
 	 * @see com.somanshu.springinversioncontrol.Coach#getInstruction()
 	 */
+	private HappyFortuneService happyfortuneservice;
+	public CricketCoach(HappyFortuneService var)
+	{
+		happyfortuneservice=var;
+	}
 	@Override
 	public String getInstruction() {
 		// TODO Auto-generated method stub

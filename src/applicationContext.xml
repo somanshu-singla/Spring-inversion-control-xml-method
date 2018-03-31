@@ -5,7 +5,11 @@
    xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
+   <bean id = "myservice" class = "com.somanshu.springinversioncontrol.HappyFortuneService">
+   </bean>
+   
    <bean id = "myCoach" class = "com.somanshu.springinversioncontrol.CricketCoach">
+   <constructor-arg ref="myservice"/>
    </bean>
 
 </beans>
