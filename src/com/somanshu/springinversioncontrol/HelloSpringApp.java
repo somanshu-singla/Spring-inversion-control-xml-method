@@ -14,6 +14,7 @@ public class HelloSpringApp {
 		
 		//call methods on bean
 		System.out.println(coach.getInstruction());
+		System.out.println(coach.getMsg());
 		//close the context
 		context.close();
 
