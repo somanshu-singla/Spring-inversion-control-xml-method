@@ -7,9 +7,16 @@
 
    <bean id = "myservice" class = "com.somanshu.springinversioncontrol.HappyFortuneService">
    </bean>
-   
+   <!-- constructor injection -->
    <bean id = "myCoach" class = "com.somanshu.springinversioncontrol.CricketCoach">
    <constructor-arg ref="myservice"/>
+   </bean>
+   
+   
+   <bean id = "hockeycoach" class = "com.somanshu.springinversioncontrol.HockeyCoach">
+   
+   <!-- setter injection -->
+   <property name="fortuneservice" ref="myservice"/>				
    </bean>
 
 </beans>
